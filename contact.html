@@ -1,13 +1,44 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Explore African food, recipes and culinary traditions."><title>Contact | Taste of Africa</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head><body>
-<header class="site-header"><div class="nav-wrap">
-<a class="brand" href="index.html">Taste of Africa 🌍</a>
-<nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="recipes.html">Recipes</a><a href="regions.html">Regions</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-<button id="themeToggle" class="theme-toggle" type="button">🌙 Dark</button>
-</nav></div></header><main><section class="section container"><span class="eyebrow">We would love to hear from you</span><h1>Contact us</h1><p class="muted">Have a recipe, story or question to share? Send us a message.</p><form id="contactForm" class="form-grid">
-<div><label for="name">Full name</label><input id="name" name="name" type="text" required placeholder="Your name"></div>
-<div><label for="email">Email address</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
-<div><label for="country">Country</label><select id="country" name="country" required><option value="">Choose your country</option><option>Rwanda</option><option>Nigeria</option><option>Ghana</option><option>Kenya</option><option>Ethiopia</option><option>Morocco</option><option>South Africa</option></select></div>
-<div><label for="message">Message</label><textarea id="message" name="message" rows="6" required minlength="21" placeholder="Write a message of more than 20 characters"></textarea></div>
-<button type="submit">Send message</button></form><div id="formFeedback" aria-live="polite"></div></section></main><footer><div class="container footer-inner"><div><h3>Taste of Africa</h3><p>Celebrating the stories, people and flavours behind African food.</p></div><div><p><a href="recipes.html">Explore recipes</a> · <a href="regions.html">Food regions</a> · <a href="contact.html">Contact us</a></p><small>© 2026 Taste of Africa. Created for learning.</small></div></div></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Taste of Africa: a celebration of African cuisine.">
+<title>Contact | Taste of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Taste<span>of</span>Africa</a>
+  <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">West</a></li><li><a href="east-africa.html">East</a></li><li><a href="north-africa.html">North</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+  <button id="themeToggle" class="icon-btn" aria-label="Toggle dark and light mode">🌙</button>
+</header>
+<main>
+<section class="wrap narrow"><h1>Contact Us</h1>
+<form id="contactForm" novalidate>
+<label for="name">Name</label><input type="text" id="name" required>
+<label for="email">Email</label><input type="email" id="email" required>
+<label for="country">Country</label><select id="country" required><option value="">Select your country</option><option>Rwanda</option><option>Nigeria</option><option>Kenya</option><option>Ghana</option><option>Ethiopia</option><option>Morocco</option><option>South Africa</option><option>Egypt</option><option>Other</option></select>
+<label for="dish">Favourite African dish</label><input type="text" id="dish" list="dishes" placeholder="Start typing…"><datalist id="dishes"><option value="Jollof Rice"><option value="Injera"><option value="Tagine"><option value="Bunny Chow"><option value="Isombe"></datalist>
+<label for="message">Message</label><textarea id="message" rows="5" required></textarea>
+<p id="formError" class="error" role="alert"></p>
+<button class="btn" type="submit">Send message</button>
+</form><p id="thanks" class="thanks hidden" role="status"></p></section>
+</main>
+<footer class="site-footer">
+  <div>
+    <h2>Taste of Africa</h2>
+    <p>Celebrating African food heritage, one recipe at a time.</p>
+  </div>
+  <form id="newsletterForm" novalidate>
+    <label for="nlEmail">Join our newsletter</label>
+    <div class="row"><input type="email" id="nlEmail" placeholder="you@example.com" required><button class="btn" type="submit">Subscribe</button></div>
+    <p id="nlMsg" role="status"></p>
+  </form>
+  <p class="copy">© 2026 Taste of Africa. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

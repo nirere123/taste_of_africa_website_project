@@ -1,8 +1,43 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Explore African food, recipes and culinary traditions."><title>West Africa | Taste of Africa</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head><body>
-<header class="site-header"><div class="nav-wrap">
-<a class="brand" href="index.html">Taste of Africa 🌍</a>
-<nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="recipes.html">Recipes</a><a href="regions.html">Regions</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-<button id="themeToggle" class="theme-toggle" type="button">🌙 Dark</button>
-</nav></div></header><main><section class="section container"><a href="regions.html">← All regions</a><span class="eyebrow">Food culture</span><h1>West Africa</h1><div class="split"><div><p>West African food is known for bold flavours and hearty meals. Rice, cassava, yams, plantain, tomatoes and peppers are common staples. Stews and soups are often prepared with layered spices and shared with family.</p><p>Common flavours include <mark class="highlight">tomatoes, chilli peppers and ginger</mark>.</p><h2>Try a regional dish</h2><p>Jollof Rice is a wonderful place to start.</p><a class="button" href="jollof-rice.html">View Jollof Rice recipe</a></div><iframe class="video" src="https://www.youtube.com/embed?listType=search&list=West%20Africa%20traditional%20food" title="West Africa food culture video" allowfullscreen loading="lazy"></iframe></div></section></main><footer><div class="container footer-inner"><div><h3>Taste of Africa</h3><p>Celebrating the stories, people and flavours behind African food.</p></div><div><p><a href="recipes.html">Explore recipes</a> · <a href="regions.html">Food regions</a> · <a href="contact.html">Contact us</a></p><small>© 2026 Taste of Africa. Created for learning.</small></div></div></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Taste of Africa: a celebration of African cuisine.">
+<title>West Africa | Taste of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Taste<span>of</span>Africa</a>
+  <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html" aria-current="page">West</a></li><li><a href="east-africa.html">East</a></li><li><a href="north-africa.html">North</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <button id="themeToggle" class="icon-btn" aria-label="Toggle dark and light mode">🌙</button>
+</header>
+<main>
+<section class="wrap"><h1>West Africa</h1><p class="lead">Bold, spicy and communal. West African cooking centres on one-pot dishes, fermented seasonings and pounded starches eaten with soups.</p>
+<h2>Staples &amp; flavours</h2><ul><li><mark>Rice</mark>, yam, cassava and plantain</li><li><mark>Palm oil</mark>, peanuts and black-eyed peas</li><li><mark>Scotch bonnet</mark> peppers and dawadawa</li></ul>
+<h2>Cooking techniques</h2><p>Slow simmering, pounding (fufu), grilling (suya) and deep frying.</p>
+<h2>Example dishes</h2><div class="grid"><article class="card" data-id="jollof-rice" data-region="west-africa">
+<figure><img src="images/jollof-rice.jpg" alt="Jollof Rice served on a plate" loading="lazy"><figcaption><strong>Jollof Rice</strong> · Nigeria</figcaption></figure>
+<p>A smoky, tomato-rich one-pot rice dish served at weddings and parties across West Africa.</p>
+<div class="card-actions"><a class="btn" href="jollof-rice.html">View recipe</a><button class="fav" data-id="jollof-rice" aria-pressed="false" aria-label="Favorite Jollof Rice">❤️ Favorite</button></div>
+</article></div>
+<h2>Watch: food culture</h2><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_WEST" title="West Africa food culture" loading="lazy" allowfullscreen></iframe></div></section>
+</main>
+<footer class="site-footer">
+  <div>
+    <h2>Taste of Africa</h2>
+    <p>Celebrating African food heritage, one recipe at a time.</p>
+  </div>
+  <form id="newsletterForm" novalidate>
+    <label for="nlEmail">Join our newsletter</label>
+    <div class="row"><input type="email" id="nlEmail" placeholder="you@example.com" required><button class="btn" type="submit">Subscribe</button></div>
+    <p id="nlMsg" role="status"></p>
+  </form>
+  <p class="copy">© 2026 Taste of Africa. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

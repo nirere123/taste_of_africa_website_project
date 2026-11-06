@@ -1,8 +1,43 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Explore African food, recipes and culinary traditions."><title>East Africa | Taste of Africa</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head><body>
-<header class="site-header"><div class="nav-wrap">
-<a class="brand" href="index.html">Taste of Africa 🌍</a>
-<nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="recipes.html">Recipes</a><a href="regions.html">Regions</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-<button id="themeToggle" class="theme-toggle" type="button">🌙 Dark</button>
-</nav></div></header><main><section class="section container"><a href="regions.html">← All regions</a><span class="eyebrow">Food culture</span><h1>East Africa</h1><div class="split"><div><p>East African cuisines include a wide range of food traditions. Teff, maize, beans, bananas and vegetables are important ingredients. Meals may include fermented flatbreads, grilled foods and slow-cooked stews.</p><p>Common flavours include <mark class="highlight">berbere spice, teff and slow-cooked stews</mark>.</p><h2>Try a regional dish</h2><p>Injera is a wonderful place to start.</p><a class="button" href="injera.html">View Injera recipe</a></div><iframe class="video" src="https://www.youtube.com/embed?listType=search&list=East%20Africa%20traditional%20food" title="East Africa food culture video" allowfullscreen loading="lazy"></iframe></div></section></main><footer><div class="container footer-inner"><div><h3>Taste of Africa</h3><p>Celebrating the stories, people and flavours behind African food.</p></div><div><p><a href="recipes.html">Explore recipes</a> · <a href="regions.html">Food regions</a> · <a href="contact.html">Contact us</a></p><small>© 2026 Taste of Africa. Created for learning.</small></div></div></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Taste of Africa: a celebration of African cuisine.">
+<title>East Africa | Taste of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Taste<span>of</span>Africa</a>
+  <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="recipes.html">Recipes</a></li><li><a href="west-africa.html">West</a></li><li><a href="east-africa.html" aria-current="page">East</a></li><li><a href="north-africa.html">North</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <button id="themeToggle" class="icon-btn" aria-label="Toggle dark and light mode">🌙</button>
+</header>
+<main>
+<section class="wrap"><h1>East Africa</h1><p class="lead">From Ethiopian stews to Swahili coastal curries, East African cuisine blends highland grains with Indian Ocean spice trade influences.</p>
+<h2>Staples &amp; flavours</h2><ul><li><mark>Teff</mark>, maize (ugali) and sorghum</li><li><mark>Berbere</mark> and cardamom</li><li>Coconut milk and lentils</li></ul>
+<h2>Cooking techniques</h2><p>Fermenting batters, slow stewing, charcoal grilling (nyama choma).</p>
+<h2>Example dishes</h2><div class="grid"><article class="card" data-id="injera" data-region="east-africa">
+<figure><img src="images/injera.jpg" alt="Injera with Doro Wat served on a plate" loading="lazy"><figcaption><strong>Injera with Doro Wat</strong> · Ethiopia</figcaption></figure>
+<p>Injera is a spongy, sour flatbread made from <mark>teff</mark> flour and used as plate and spoon.</p>
+<div class="card-actions"><a class="btn" href="injera.html">View recipe</a><button class="fav" data-id="injera" aria-pressed="false" aria-label="Favorite Injera with Doro Wat">❤️ Favorite</button></div>
+</article></div>
+<h2>Watch: food culture</h2><div class="video"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_EAST" title="East Africa food culture" loading="lazy" allowfullscreen></iframe></div></section>
+</main>
+<footer class="site-footer">
+  <div>
+    <h2>Taste of Africa</h2>
+    <p>Celebrating African food heritage, one recipe at a time.</p>
+  </div>
+  <form id="newsletterForm" novalidate>
+    <label for="nlEmail">Join our newsletter</label>
+    <div class="row"><input type="email" id="nlEmail" placeholder="you@example.com" required><button class="btn" type="submit">Subscribe</button></div>
+    <p id="nlMsg" role="status"></p>
+  </form>
+  <p class="copy">© 2026 Taste of Africa. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

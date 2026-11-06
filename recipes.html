@@ -1,11 +1,53 @@
 <!DOCTYPE html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="description" content="Explore African food, recipes and culinary traditions."><title>Recipes | Taste of Africa</title><link rel="stylesheet" href="styles.css"><script src="script.js" defer></script></head><body>
-<header class="site-header"><div class="nav-wrap">
-<a class="brand" href="index.html">Taste of Africa 🌍</a>
-<nav aria-label="Main navigation">
-<a href="index.html">Home</a><a href="recipes.html">Recipes</a><a href="regions.html">Regions</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-<button id="themeToggle" class="theme-toggle" type="button">🌙 Dark</button>
-</nav></div></header><main>
-<section class="section container"><span class="eyebrow">Cook something new</span><h1>African recipes</h1><p class="muted">Choose a region to discover dishes from across the continent. Save recipes you want to try.</p>
-<div class="filters"><button class="active" data-filter="all">All</button><button data-filter="west-africa">West Africa</button><button data-filter="east-africa">East Africa</button><button data-filter="north-africa">North Africa</button><button data-filter="central-africa">Central Africa</button><button data-filter="southern-africa">Southern Africa</button></div>
-<div class="grid"><article class="card" data-region="west-africa"><img src="https://images.unsplash.com/photo-1604329760661-e71dc83f8f26?auto=format&fit=crop&w=900&q=80" alt="Jollof Rice African dish"><div class="card-body"><span class="tag">West Africa</span><h3>Jollof Rice</h3><p class="muted">A one-pot rice dish cooked with tomatoes, peppers and warming spices.</p><a class="button" href="jollof-rice.html">View recipe</a> <button type="button" data-favorite="jollof-rice">♡ Favorite</button></div></article><article class="card" data-region="east-africa"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Injera African dish"><div class="card-body"><span class="tag">East Africa</span><h3>Injera</h3><p class="muted">A soft, tangy fermented flatbread traditionally served with colourful stews.</p><a class="button" href="injera.html">View recipe</a> <button type="button" data-favorite="injera">♡ Favorite</button></div></article><article class="card" data-region="north-africa"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Tagine African dish"><div class="card-body"><span class="tag">North Africa</span><h3>Tagine</h3><p class="muted">A slow-cooked stew named after the cone-shaped pot used to prepare it.</p><a class="button" href="tagine.html">View recipe</a> <button type="button" data-favorite="tagine">♡ Favorite</button></div></article><article class="card" data-region="central-africa"><img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=900&q=80" alt="Isombe African dish"><div class="card-body"><span class="tag">Central Africa</span><h3>Isombe</h3><p class="muted">A comforting dish of cassava leaves cooked with onion and groundnuts.</p><a class="button" href="isombe.html">View recipe</a> <button type="button" data-favorite="isombe">♡ Favorite</button></div></article><article class="card" data-region="southern-africa"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=900&q=80" alt="Bunny Chow African dish"><div class="card-body"><span class="tag">Southern Africa</span><h3>Bunny Chow</h3><p class="muted">A street-food favourite of curry served inside a hollowed-out loaf of bread.</p><a class="button" href="bunny-chow.html">View recipe</a> <button type="button" data-favorite="bunny-chow">♡ Favorite</button></div></article></div></section></main><footer><div class="container footer-inner"><div><h3>Taste of Africa</h3><p>Celebrating the stories, people and flavours behind African food.</p></div><div><p><a href="recipes.html">Explore recipes</a> · <a href="regions.html">Food regions</a> · <a href="contact.html">Contact us</a></p><small>© 2026 Taste of Africa. Created for learning.</small></div></div></footer></body></html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Taste of Africa: a celebration of African cuisine.">
+<title>Recipes | Taste of Africa</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html">Taste<span>of</span>Africa</a>
+  <nav aria-label="Main navigation"><ul><li><a href="index.html">Home</a></li><li><a href="recipes.html" aria-current="page">Recipes</a></li><li><a href="west-africa.html">West</a></li><li><a href="east-africa.html">East</a></li><li><a href="north-africa.html">North</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+  <button id="themeToggle" class="icon-btn" aria-label="Toggle dark and light mode">🌙</button>
+</header>
+<main>
+<section class="wrap"><h1>Recipes</h1><p>Filter by region and tap ❤️ to save dishes you want to try.</p>
+<div class="filters" role="group" aria-label="Filter recipes by region"><button class="filter active" data-region="all">All</button><button class="filter" data-region="west-africa">West Africa</button><button class="filter" data-region="east-africa">East Africa</button><button class="filter" data-region="north-africa">North Africa</button><button class="filter" data-region="southern-africa">Southern Africa</button></div>
+<div class="grid" id="recipeGrid"><article class="card" data-id="jollof-rice" data-region="west-africa">
+<figure><img src="images/jollof-rice.jpg" alt="Jollof Rice served on a plate" loading="lazy"><figcaption><strong>Jollof Rice</strong> · Nigeria</figcaption></figure>
+<p>A smoky, tomato-rich one-pot rice dish served at weddings and parties across West Africa.</p>
+<div class="card-actions"><a class="btn" href="jollof-rice.html">View recipe</a><button class="fav" data-id="jollof-rice" aria-pressed="false" aria-label="Favorite Jollof Rice">❤️ Favorite</button></div>
+</article><article class="card" data-id="injera" data-region="east-africa">
+<figure><img src="images/injera.jpg" alt="Injera with Doro Wat served on a plate" loading="lazy"><figcaption><strong>Injera with Doro Wat</strong> · Ethiopia</figcaption></figure>
+<p>Injera is a spongy, sour flatbread made from <mark>teff</mark> flour and used as plate and spoon.</p>
+<div class="card-actions"><a class="btn" href="injera.html">View recipe</a><button class="fav" data-id="injera" aria-pressed="false" aria-label="Favorite Injera with Doro Wat">❤️ Favorite</button></div>
+</article><article class="card" data-id="tagine" data-region="north-africa">
+<figure><img src="images/tagine.jpg" alt="Lamb Tagine served on a plate" loading="lazy"><figcaption><strong>Lamb Tagine</strong> · Morocco</figcaption></figure>
+<p>A slow-cooked stew named after the conical clay pot it is cooked in.</p>
+<div class="card-actions"><a class="btn" href="tagine.html">View recipe</a><button class="fav" data-id="tagine" aria-pressed="false" aria-label="Favorite Lamb Tagine">❤️ Favorite</button></div>
+</article><article class="card" data-id="bunny-chow" data-region="southern-africa">
+<figure><img src="images/bunny-chow.jpg" alt="Bunny Chow served on a plate" loading="lazy"><figcaption><strong>Bunny Chow</strong> · South Africa</figcaption></figure>
+<p>A Durban street-food classic: a hollowed-out loaf of bread filled with fragrant curry.</p>
+<div class="card-actions"><a class="btn" href="bunny-chow.html">View recipe</a><button class="fav" data-id="bunny-chow" aria-pressed="false" aria-label="Favorite Bunny Chow">❤️ Favorite</button></div>
+</article></div></section>
+</main>
+<footer class="site-footer">
+  <div>
+    <h2>Taste of Africa</h2>
+    <p>Celebrating African food heritage, one recipe at a time.</p>
+  </div>
+  <form id="newsletterForm" novalidate>
+    <label for="nlEmail">Join our newsletter</label>
+    <div class="row"><input type="email" id="nlEmail" placeholder="you@example.com" required><button class="btn" type="submit">Subscribe</button></div>
+    <p id="nlMsg" role="status"></p>
+  </form>
+  <p class="copy">© 2026 Taste of Africa. All rights reserved.</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
